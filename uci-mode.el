@@ -8,7 +8,6 @@
 
 ;; Add dir to load-path and (require 'uci-mode)
 
-
 (defvar uci-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map "\C-j" 'newline-and-indent)
@@ -36,8 +35,6 @@
        '(uci-font-lock-keywords))
   (set (make-local-variable 'indent-line-function) 'uci-indent-line))
 
-;;; Indentation
-
 (defun uci-indent-line ()
   "Indent current line of UCI configuration."
   (interactive)
@@ -53,7 +50,7 @@
   (save-excursion
     (beginning-of-line)
     (cond ((looking-at "^[ \t]*\\(option\\|list\\)") tab-width)
-	  ((looking-at "^[ \t]*\\config") 0)
+	  ((looking-at "^[ \t]*config") 0)
 	  (t tab-width))))
 
 (provide 'uci-mode)
