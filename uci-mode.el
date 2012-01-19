@@ -1,4 +1,4 @@
-;;; uci-mode.el -- Major mode for UCI configuration files
+;;; uci-mode.el --- Major mode for UCI configuration files
 
 ;; Public Domain
 
