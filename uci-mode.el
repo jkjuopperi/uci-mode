@@ -1,10 +1,13 @@
-;;;
-;;; uci-mode
-;;; public domain
-;;; Juho Juopperi <jkj@kapsi.fi>
-;;;
-;;; Add dir to load-path and (require 'uci-mode)
-;;;
+;;; uci-mode.el -- Major mode for UCI configuration files
+
+;; Public Domain
+
+;; Author: Juho Juopperi <jkj@kapsi.fi>
+;; URL: http://github.com/jkjuopperi/uci-mode
+;; Version: 1.0.0
+
+;; Add dir to load-path and (require 'uci-mode)
+
 
 (defvar uci-mode-map
   (let ((map (make-sparse-keymap)))
@@ -54,3 +57,5 @@
 	  (t tab-width))))
 
 (provide 'uci-mode)
+
+;;; uci-mode.el ends here
